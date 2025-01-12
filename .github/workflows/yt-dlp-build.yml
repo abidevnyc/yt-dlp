@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4  # 使用 v4 版本
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -41,7 +41,7 @@ jobs:
           pyinstaller --onefile yt_dlp/__main__.py --target-arch arm64
           
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4  # 使用 v4 版本
         with:
           name: yt-dlp-arm64-windows
           path: dist/yt-dlp.exe
