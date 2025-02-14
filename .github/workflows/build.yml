@@ -516,7 +516,7 @@ jobs:
         with:
           name: build-bin-windows-arm64
           path: dist/yt-dlp_arm64.exe
-          compression-level: 0
+          compression-level: 1
 
 
   meta_files:
